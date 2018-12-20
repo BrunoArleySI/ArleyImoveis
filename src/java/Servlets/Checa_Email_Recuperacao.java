@@ -41,7 +41,7 @@ public class Checa_Email_Recuperacao extends HttpServlet {
 
             if (request.getMethod().equals("POST")) {
                 EnviarEmail enviar = new EnviarEmail();
-                enviar.setEmailDestinatario("ArleyImoveis@gmail.com");
+                enviar.setEmailDestinatario("");
                 enviar.setAssunto("Arley Imóveis");
                 //uso StringBuffer para otimizar a concatenação 
                 //de string

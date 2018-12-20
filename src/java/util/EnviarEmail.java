@@ -106,7 +106,7 @@ public class EnviarEmail {
                         new javax.mail.Authenticator() {
                              protected PasswordAuthentication getPasswordAuthentication() 
                              {
-                                   return new PasswordAuthentication("ArleyImoveis@outlook.com", "Arley12345678");
+                                   return new PasswordAuthentication("seu email", "sua senha");
                              }
                         });
             /** Ativa Debug para sessão */
@@ -114,7 +114,7 @@ public class EnviarEmail {
             try {
 
                   Message message = new MimeMessage(session);
-                  message.setFrom(new InternetAddress("ArleyImoveis@outlook.com")); //Remetente
+                  message.setFrom(new InternetAddress("seu ameil")); //Remetente
 
                   message.setRecipients(Message.RecipientType.TO, 
                                     InternetAddress.parse(Email)); //Destinatário(s)
